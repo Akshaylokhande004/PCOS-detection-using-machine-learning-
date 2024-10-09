@@ -23,13 +23,15 @@ PCOS is a hormonal disorder common among women of reproductive age, and early de
 - **NumPy** for numerical operations.
 
 
-Usage
-GUI: The graphical interface allows users to upload ultrasound images and view predictions on whether PCOS is detected.
-Command Line: Use the predict.py script for command-line predictions, specifying the image path as input.
-Model Performance
+# Usage
+# GUI: 
+The graphical interface allows users to upload ultrasound images and view predictions on whether PCOS is detected.
+# Command Line:
+Use the predict.py script for command-line predictions, specifying the image path as input.
+# Model Performance
 The CNN model achieved an accuracy of 99.9% on the training set and 96-99% on various test datasets of ultrasound images. This high accuracy makes it a reliable tool for diagnosing PCOS.
 
-Future Enhancements
+# Future Enhancements
 Integrate additional imaging techniques such as MRI or CT scans to improve diagnostic accuracy.
 Develop a web-based or mobile app for broader accessibility.
 Implement real-time monitoring using telemedicine platforms.
