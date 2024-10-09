@@ -1,43 +1,35 @@
-**PCOS Detection Using Machine Learning**
-Project Overview
-This project aims to develop an intelligent system for detecting Polycystic Ovary Syndrome (PCOS) from ultrasound images using Machine Learning techniques. The system is based on a Convolutional Neural Network (CNN) for image feature extraction, coupled with an ensemble learning model for classification.
+# PCOS Detection Using Machine Learning
 
-PCOS is a hormonal disorder that affects women’s reproductive health, often leading to infertility due to the formation of cysts in the ovaries. Early and accurate diagnosis is critical for effective treatment and symptom management. This project offers a computer-aided solution to identify PCOS from ovary ultrasound images, improving diagnostic accuracy and reducing manual errors.
+## Overview
+This project aims to develop an intelligent system for detecting **Polycystic Ovary Syndrome (PCOS)** using machine learning techniques. The system analyzes ultrasound images of ovaries to detect the presence of ovarian cysts. A **Convolutional Neural Network (CNN)** is used for feature extraction from ultrasound images, and an **ensemble learning model** classifies whether the ovary is affected by PCOS.
 
-Features
-Convolutional Neural Network (CNN) for automated feature extraction from ultrasound images.
-Transfer Learning techniques applied for improved model accuracy.
-Stacking Ensemble Method with conventional machine learning algorithms (e.g., SVM, Random Forest) to classify PCOS.
-User Interface for uploading ultrasound images and receiving diagnostic results.
+PCOS is a hormonal disorder common among women of reproductive age, and early detection is crucial for managing its symptoms and complications.
 
-Project Structure
-
-├── dataset/           # Directory containing ultrasound images
-├── models/            # Pretrained models and trained weights
-├── src/               # Source code for model training and testing
-│   ├── cnn_model.py   # CNN model definition
-│   ├── ensemble.py    # Ensemble model code
-│   ├── preprocess.py  # Preprocessing functions (e.g., image normalization)
-│   ├── predict.py     # Script for PCOS prediction from an ultrasound image
-├── app/               # User interface files (Tkinter-based)
-│   ├── main.py        # Main app file to launch the interface
-├── requirements.txt   # Required libraries and dependencies
-├── README.md          # Project readme (this file)
-
-Getting Started
-    Prerequisites
-        Python 3.x
-        TensorFlow/Keras for deep learning
-        OpenCV for image processing
-        Pillow for image manipulation
-        Tkinter for the GUI
-        NumPy and Pandas for data handling
+## Features
+- **Convolutional Neural Network (CNN)** for automated feature extraction.
+- **Transfer Learning** for improved model performance.
+- **Ensemble Learning** with base learners (e.g., Random Forest, SVM) and boosting/bagging for final classification.
+- **Graphical User Interface (GUI)** for easy use, built with Tkinter, allowing users to upload images and receive PCOS predictions.
+- High **accuracy** of up to **99.9%** based on the dataset.
 
 
-**Model Performance**
-The model achieved up to 99% accuracy in classifying PCOS from a test dataset of ultrasound images. The use of CNN and transfer learning significantly improved diagnostic accuracy and reduced training time.
+## Installation
 
-**Future Enhancements**
-Extend the model to support multiple imaging modalities such as CT or MRI.
-Implement remote PCOS monitoring using mobile health applications or telemedicine.
+### Prerequisites
+- **Python 3.x**
+- **TensorFlow/Keras** for building the CNN.
+- **OpenCV** for image processing.
+- **Pillow** for handling images in Tkinter.
+- **NumPy** for numerical operations.
 
+
+Usage
+GUI: The graphical interface allows users to upload ultrasound images and view predictions on whether PCOS is detected.
+Command Line: Use the predict.py script for command-line predictions, specifying the image path as input.
+Model Performance
+The CNN model achieved an accuracy of 99.9% on the training set and 96-99% on various test datasets of ultrasound images. This high accuracy makes it a reliable tool for diagnosing PCOS.
+
+Future Enhancements
+Integrate additional imaging techniques such as MRI or CT scans to improve diagnostic accuracy.
+Develop a web-based or mobile app for broader accessibility.
+Implement real-time monitoring using telemedicine platforms.
